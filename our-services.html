@@ -24,44 +24,63 @@
     />
 
     <style>
-      /* Add your CSS styles for mobile responsiveness here */
+      /* Common styles for all screen sizes */
+      /* You can define common styles here that apply to all devices */
+    
+      /* Example: Set a common font size for headings */
+      .heading {
+        font-size: 28px;
+      }
+    
+      /* Example: Add padding to containers for spacing */
+      .container {
+        padding: 20px;
+      }
+    
+      /* Make sure images are responsive on all devices */
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    
+      /* Center align text */
+      .center-text {
+        text-align: center;
+      }
+    
+      /* Responsive styles for smaller screens (mobile devices) */
       @media (max-width: 768px) {
-          /* Adjust styles for screens with a maximum width of 768px (typical for mobile devices) */
-
-          /* Example: Center align text on mobile */
-          .heading {
-              text-align: center;
-          }
-
-          /* Example: Increase padding for better spacing on mobile */
-          .container {
-              padding: 20px;
-          }
-
-          /* Example: Adjust font sizes for mobile */
-          .heading {
-              font-size: 24px;
-          }
-
-          /* Example: Make images responsive on mobile */
-          img {
-              max-width: 100%;
-              height: auto;
-          }
-
-          /* Add more responsive styles as needed */
+        /* Adjust styles for screens with a maximum width of 768px (typical for mobile devices) */
+    
+        /* Example: Center align text on mobile */
+        .center-text {
+          text-align: center;
+        }
+    
+        /* Example: Adjust font sizes for mobile */
+        .heading {
+          font-size: 24px;
+        }
+    
+        /* Example: Increase padding for better spacing on mobile */
+        .container {
+          padding: 10px;
+        }
+    
+        /* Add more responsive styles as needed for other elements */
       }
-
-      /* Additional styles for tablet-sized screens */
-      @media (max-width: 1024px) {
-          /* Example: Adjust font sizes for tablets */
-          .heading {
-              font-size: 36px;
-          }
-
-          /* Add more responsive styles for tablets if needed */
+    
+      /* Responsive styles for larger screens (tablets) */
+      @media (min-width: 769px) and (max-width: 1024px) {
+        /* Example: Adjust font sizes for tablets */
+        .heading {
+          font-size: 36px;
+        }
+    
+        /* Add more responsive styles for tablets if needed */
       }
-  </style>
+    </style>
+    
   </head>
   <body>
     <div class="our-services">
