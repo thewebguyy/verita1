@@ -1,30 +1,46 @@
-@media (max-width: 768px) {
-  /* Adjust styles for screens with a maximum width of 768px (typical for mobile devices) */
+/* Mobile-first styles (applies to all screen sizes) */
+/* Use relative units for font sizes */
+body {
+  font-size: 16px;
+}
 
-  /* Example: Center align text on mobile */
-  .div {
-    text-align: center;
-  }
+/* Use a mobile-friendly layout */
+.container {
+  max-width: 100%;
+  padding: 20px;
+}
 
-  /* Example: Reduce font size on mobile */
-  .div1 {
+/* Make images responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Media query for tablets (768px) and larger screens */
+@media (min-width: 768px) {
+  /* Increase font size for tablets */
+  body {
     font-size: 18px;
   }
 
-  /* Example: Adjust spacing for mobile */
-  .parent {
-    flex-direction: column;
-    gap: 20px;
+  /* Adjust layout for larger screens */
+  .container {
+    padding: 40px;
   }
 
-  /* Example: Make images responsive on mobile */
-  .rectangle-icon {
-    width: 100%;
-    height: auto;
-  }
-
-  /* Add more responsive styles as needed for other elements */
+  /* Add additional styles for tablets and larger screens */
 }
+
+/* Media query for larger screens (1024px) */
+@media (min-width: 1024px) {
+  /* Further adjustments for larger screens */
+  body {
+    font-size: 20px;
+  }
+
+  /* Add more styles for larger screens if needed */
+}
+
 
 
 
