@@ -1,47 +1,33 @@
-/* Mobile-first styles (applies to all screen sizes) */
-/* Use relative units for font sizes */
-body {
+/* Media query for screens smaller than 576px */
+@media screen and (max-width: 576px) {
+  /* Reduce the font size of the navigation menu */
+  .nav .nav-item {
+   font-size: 14px;
+  }
+  
+  /* Remove the padding on the sides of the navigation menu */
+  .nav {
+  padding: 0;
+  }
+  
+  /* Center the navigation menu horizontally */
+ .nav {
+  text-align: center;
+ }
+  }
+  
+  /* Media query for screens larger than 576px */
+  @media screen and (min-width: 576px) {
+/* Restore the original font size of the navigation menu */
+.nav .nav-item {
   font-size: 16px;
-}
-
-/* Use a mobile-friendly layout */
-.container {
-  max-width: 100%;
-  padding: 20px;
-}
-
-/* Make images responsive */
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Media query for tablets (768px) and larger screens */
-@media (min-width: 768px) {
-  /* Increase font size for tablets */
-  body {
-    font-size: 18px;
   }
-
-  /* Adjust layout for larger screens */
-  .container {
-    padding: 40px;
+  
+  /* Add padding back to the sides of the navigation menu */
+ .nav {
+   padding: 0 1rem;
+   }
   }
-
-  /* Add additional styles for tablets and larger screens */
-}
-
-/* Media query for larger screens (1024px) */
-@media (min-width: 1024px) {
-  /* Further adjustments for larger screens */
-  body {
-    font-size: 20px;
-  }
-
-  /* Add more styles for larger screens if needed */
-}
-
-
 
 
 .whatsapp-image-2023-09-08-at-4 {
@@ -1571,4 +1557,35 @@ img {
   font-size: var(--font-size-37xl);
   color: var(--base-white);
   font-family: var(--font-cormorant-garamond);
+}
+
+/* Media query for screens larger than 576px */
+@media screen and (min-width: 576px) {
+  /* Restore the original font size of the navigation menu */
+  .nav .nav-item {
+    font-size: 16px;
+  }
+
+  /* Add padding back to the sides of the navigation menu */
+  .nav {
+    padding: 0 1rem;
+  }
+}
+
+/* Media query for screens smaller than 576px */
+@media screen and (max-width: 576px) {
+  /* Reduce the font size of the navigation menu */
+  .nav .nav-item {
+    font-size: 14px;
+  }
+
+  /* Remove the padding on the sides of the navigation menu */
+  .nav {
+    padding: 0;
+  }
+
+  /* Center the navigation menu horizontally */
+  .nav {
+    text-align: center;
+  }
 }
