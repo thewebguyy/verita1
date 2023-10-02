@@ -1322,25 +1322,19 @@
 .container-container {
   align-items: center;
   gap: var(--gap-21xl);
+  display: flex; /* Ensure it's a flex container */
+  flex-direction: column; /* Stack children vertically on smaller screens */
+  justify-content: flex-start; /* Align children to the top */
 }
-.container-container,
-.features-section2,
-.heading-and-subheading1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
+
 .features-section2 {
-  position: absolute;
-  top: 3327px;
-  left: 0;
   background-color: #d9962d;
-  width: 1440px;
-  overflow: hidden;
+  width: 100%; /* Use 100% width to make it responsive */
   padding: var(--padding-61xl) 0;
   box-sizing: border-box;
-  align-items: center;
+  text-align: center; /* Center text content */
 }
+
 .heading-and-subheading1 {
   align-self: stretch;
   align-items: flex-start;
