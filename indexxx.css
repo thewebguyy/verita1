@@ -1,117 +1,104 @@
-/* Mobile-first styles (applies to all screen sizes) */
-/* Use relative units for font sizes */
-body {
-  font-size: 16px;
-}
-
-/* Use a mobile-friendly layout */
-.container {
-  max-width: 100%;
-  padding: 20px;
-}
-
-/* Make images responsive */
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Media query for tablets (768px) and larger screens */
-@media (min-width: 768px) {
-  /* Increase font size for tablets */
-  body {
-    font-size: 18px;
+/* Media query for screens smaller than 576px */
+@media screen and (max-width: 576px) {
+    /* Reduce the font size of the navigation menu */
+    .nav .nav-item {
+      font-size: 14px;
+    }
+  
+    /* Remove the padding on the sides of the navigation menu */
+    .nav {
+      padding: 0;
+    }
+  
+    /* Center the navigation menu horizontally */
+    .nav {
+      text-align: center;
+    }
   }
-
-  /* Adjust layout for larger screens */
-  .container {
-    padding: 40px;
+  
+  /* Media query for screens larger than 576px */
+  @media screen and (min-width: 576px) {
+    /* Restore the original font size of the navigation menu */
+    .nav .nav-item {
+      font-size: 16px;
+    }
+  
+    /* Add padding back to the sides of the navigation menu */
+    .nav {
+      padding: 0 1rem;
+    }
   }
-
-  /* Add additional styles for tablets and larger screens */
-}
-
-/* Media query for larger screens (1024px) */
-@media (min-width: 1024px) {
-  /* Further adjustments for larger screens */
-  body {
-    font-size: 20px;
+  
+  .div {
+    position: relative;
+    line-height: 28px;
+    text-transform: uppercase;
+    font-weight: 500;
+    opacity: 0;
   }
-
-  /* Add more styles for larger screens if needed */
-}
-
-
-.div {
-  position: relative;
-  line-height: 28px;
-  text-transform: uppercase;
-  font-weight: 500;
-  opacity: 0;
-}
-.rectangle-icon {
-  position: relative;
-  width: 202.06px;
-  height: 100px;
-  object-fit: cover;
-  cursor: pointer;
-}
-.div1 {
-  position: relative;
-  font-size: var(--font-size-lg);
-  line-height: 28px;
-  text-transform: uppercase;
-  font-weight: 500;
-  font-family: var(--font-futura);
-  color: var(--color-gray-100);
-}
-.parent {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 334px;
-}
-.text {
-  position: relative;
-  letter-spacing: 0.01em;
-  line-height: 28px;
-  text-transform: uppercase;
-  font-weight: 500;
-}
-.button,
-.button-base {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-.button {
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-.dropdown-header-navigation-tri {
-  flex-direction: column;
-  padding: var(--padding-9xs) 0;
-  cursor: pointer;
-}
-.dropdown-header-navigation-tri,
-.dropdown-header-navigation-tri2,
-.navigation {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.dropdown-header-navigation-tri2 {
-  flex-direction: column;
-  padding: var(--padding-9xs) 0;
-}
-.navigation {
-  flex-direction: row;
-  gap: var(--gap-45xl);
-  color: var(--color-gray-100);
-  font-family: var(--font-futura);
-}
+  .rectangle-icon {
+    position: relative;
+    width: 202.06px;
+    height: 100px;
+    object-fit: cover;
+    cursor: pointer;
+  }
+  .div1 {
+    position: relative;
+    font-size: var(--font-size-lg);
+    line-height: 28px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: var(--font-futura);
+    color: var(--color-gray-100);
+  }
+  .parent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 334px;
+  }
+  .text {
+    position: relative;
+    letter-spacing: 0.01em;
+    line-height: 28px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .button,
+  .button-base {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .button {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .dropdown-header-navigation-tri {
+    flex-direction: column;
+    padding: var(--padding-9xs) 0;
+    cursor: pointer;
+  }
+  .dropdown-header-navigation-tri,
+  .dropdown-header-navigation-tri2,
+  .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .dropdown-header-navigation-tri2 {
+    flex-direction: column;
+    padding: var(--padding-9xs) 0;
+  }
+  .navigation {
+    flex-direction: row;
+    gap: var(--gap-45xl);
+    color: var(--color-gray-100);
+    font-
+  
 .container,
 .content {
   align-self: stretch;
@@ -673,4 +660,35 @@ img {
   font-size: var(--font-size-37xl);
   color: var(--base-white);
   font-family: var(--font-cormorant-garamond);
+}
+
+/* Media query for screens larger than 576px */
+@media screen and (min-width: 576px) {
+  /* Restore the original font size of the navigation menu */
+  .nav .nav-item {
+    font-size: 16px;
+  }
+
+  /* Add padding back to the sides of the navigation menu */
+  .nav {
+    padding: 0 1rem;
+  }
+}
+
+/* Media query for screens smaller than 576px */
+@media screen and (max-width: 576px) {
+  /* Reduce the font size of the navigation menu */
+  .nav .nav-item {
+    font-size: 14px;
+  }
+
+  /* Remove the padding on the sides of the navigation menu */
+  .nav {
+    padding: 0;
+  }
+
+  /* Center the navigation menu horizontally */
+  .nav {
+    text-align: center;
+  }
 }
