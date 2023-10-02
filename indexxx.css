@@ -1,103 +1,104 @@
 /* Media query for screens smaller than 576px */
 @media screen and (max-width: 576px) {
-    /* Reduce the font size of the navigation menu */
-    .nav .nav-item {
-      font-size: 14px;
-    }
+  /* Reduce the font size of the navigation menu */
+  .nav .nav-item {
+   font-size: 14px;
+  }
   
-    /* Remove the padding on the sides of the navigation menu */
-    .nav {
-      padding: 0;
-    }
+  /* Remove the padding on the sides of the navigation menu */
+  .nav {
+  padding: 0;
+  }
   
-    /* Center the navigation menu horizontally */
-    .nav {
-      text-align: center;
-    }
+  /* Center the navigation menu horizontally */
+ .nav {
+  text-align: center;
+ }
   }
   
   /* Media query for screens larger than 576px */
   @media screen and (min-width: 576px) {
-    /* Restore the original font size of the navigation menu */
-    .nav .nav-item {
-      font-size: 16px;
-    }
+/* Restore the original font size of the navigation menu */
+.nav .nav-item {
+  font-size: 16px;
+  }
   
-    /* Add padding back to the sides of the navigation menu */
-    .nav {
-      padding: 0 1rem;
-    }
+  /* Add padding back to the sides of the navigation menu */
+ .nav {
+   padding: 0 1rem;
+   }
   }
   
   .div {
-    position: relative;
-    line-height: 28px;
-    text-transform: uppercase;
-    font-weight: 500;
-    opacity: 0;
+  position: relative;
+  line-height: 28px;
+  text-transform: uppercase;
+ font-weight: 500;
+  opacity: 0;
   }
   .rectangle-icon {
-    position: relative;
-    width: 202.06px;
-    height: 100px;
-    object-fit: cover;
-    cursor: pointer;
+  position: relative;
+  width: 202.06px;
+  height: 100px;
+  object-fit: cover;
+  cursor: pointer;
   }
   .div1 {
-    position: relative;
-    font-size: var(--font-size-lg);
-    line-height: 28px;
-    text-transform: uppercase;
-    font-weight: 500;
-    font-family: var(--font-futura);
-    color: var(--color-gray-100);
+  position: relative;
+  font-size: var(--font-size-lg);
+  line-height: 28px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: var(--font-futura);
+  color: var(--color-gray-100);
   }
   .parent {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 334px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 334px;
   }
   .text {
-    position: relative;
-    letter-spacing: 0.01em;
-    line-height: 28px;
-    text-transform: uppercase;
-    font-weight: 500;
+  position: relative;
+  letter-spacing: 0.01em;
+  line-height: 28px;
+  text-transform: uppercase;
+  font-weight: 500;
   }
   .button,
   .button-base {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   }
   .button {
-    align-items: flex-start;
-    justify-content: flex-start;
+  align-items: flex-start;
+  justify-content: flex-start;
   }
   .dropdown-header-navigation-tri {
-    flex-direction: column;
-    padding: var(--padding-9xs) 0;
-    cursor: pointer;
+  flex-direction: column;
+  padding: var(--padding-9xs) 0;
+  cursor: pointer;
   }
   .dropdown-header-navigation-tri,
   .dropdown-header-navigation-tri2,
   .navigation {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
   }
   .dropdown-header-navigation-tri2 {
-    flex-direction: column;
-    padding: var(--padding-9xs) 0;
+  flex-direction: column;
+ padding: var(--padding-9xs) 0;
   }
   .navigation {
-    flex-direction: row;
-    gap: var(--gap-45xl);
-    color: var(--color-gray-100);
-    font-
+  flex-direction: row;
+  gap: var(--gap-45xl);
+  color: var(--color-gray-100);
+  font-family: var(--font-futura);
+}
   
 .container,
 .content {
