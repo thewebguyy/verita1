@@ -1330,17 +1330,6 @@
   flex-direction: column;
   justify-content: flex-start;
 }
-.features-section2 {
-  position: absolute;
-  top: 3327px;
-  left: 0;
-  background-color: #d9962d;
-  width: 1440px;
-  overflow: hidden;
-  padding: var(--padding-61xl) 0;
-  box-sizing: border-box;
-  align-items: center;
-}
 .heading-and-subheading1 {
   align-self: stretch;
   align-items: flex-start;
